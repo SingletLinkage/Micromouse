@@ -161,7 +161,7 @@ def showFlood():
     # sets text in mms simulator cells (for some reason doesnt work; nothing i can do to fix this)
     for x in range(SIZE):
         for y in range(SIZE):
-            API.setText(x,y,str(cells[y][x]))
+            API.setText(x,SIZE-1-y,str(cells[y][x]))
 
 def next_move(current, nxt, orient, nxt_dir:str):
     # uses current and next cell locations; and orientations to find out what the next move should be
